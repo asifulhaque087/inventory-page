@@ -91,9 +91,9 @@ const Inventory = () => {
           </nav>
         </aside>
 
-        <article className="grow bg-greenn-500">
+        <article className="grow bg-greenn-500 pr-9">
           this is table part
-          <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+          <div className="relative overflow-x-auto border sm:rounded-lg mt-10 bg-white">
             <div className="p-4">
               <label htmlFor="table-search" className="sr-only">
                 Search
@@ -121,8 +121,8 @@ const Inventory = () => {
                 />
               </div>
             </div>
-            <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-              <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <table className="w-full text-base text-left text-neutral-9">
+              <thead className="font-thin text-xs text-neutral-9 bg-[#FDF4ED]">
                 <tr>
                   <th scope="col" className="p-4">
                     <div className="flex items-center">
@@ -137,16 +137,28 @@ const Inventory = () => {
                     </div>
                   </th>
                   <th scope="col" className="px-6 py-3">
-                    Product name
+                    Date Update
                   </th>
                   <th scope="col" className="px-6 py-3">
-                    Color
+                    Title
                   </th>
                   <th scope="col" className="px-6 py-3">
-                    Category
+                    Details
                   </th>
                   <th scope="col" className="px-6 py-3">
-                    Price
+                    Status
+                  </th>
+
+                  <th scope="col" className="px-6 py-3">
+                    Quantity
+                  </th>
+
+                  <th scope="col" className="px-6 py-3">
+                    Unit Price
+                  </th>
+
+                  <th scope="col" className="px-6 py-3">
+                    Amount
                   </th>
                   <th scope="col" className="px-6 py-3">
                     <span className="sr-only">Edit</span>
@@ -170,25 +182,20 @@ const Inventory = () => {
                       </label>
                     </div>
                   </td>
-                  <th
-                    scope="row"
-                    className="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap"
-                  >
-                    Apple MacBook Pro 17"
-                  </th>
-                  <td className="px-6 py-4">Sliver</td>
-                  <td className="px-6 py-4">Laptop</td>
-                  <td className="px-6 py-4">$2999</td>
-                  <td className="px-6 py-4 text-right">
-                    <a
-                      href="#"
-                      className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                    >
-                      Edit
-                    </a>
+                  <td className="px-6 py-4">11 Nov 2021</td>
+                  <td className="px-6 py-4">Hammer</td>
+                  <td className="px-6 py-4">This is hammer to do work with</td>
+                  <td className="px-6 py-4 flex items-center gap-2">
+                    Alright
+                    <div className="h-2 w-2 rounded-full bg-green-500" />
                   </td>
+                  <td className="px-6 py-4">
+                    <span className="font-bold">200</span>/300
+                  </td>
+                  <td className="px-6 py-4">$10</td>
+                  <td className="px-6 py-4">$2000.00</td>
                 </tr>
-                <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                {/* <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                   <td className="w-4 p-4">
                     <div className="flex items-center">
                       <input
@@ -255,7 +262,7 @@ const Inventory = () => {
                       Edit
                     </a>
                   </td>
-                </tr>
+                </tr> */}
               </tbody>
             </table>
           </div>
