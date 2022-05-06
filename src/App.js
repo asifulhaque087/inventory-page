@@ -1,10 +1,12 @@
 // import logo from './logo.svg';
 // import './App.css';
 
+import Inventory from "./pages/Inventory";
+
 function App() {
   return (
     <div className="App">
-      i am from app 
+      <Inventory />
     </div>
   );
 }
