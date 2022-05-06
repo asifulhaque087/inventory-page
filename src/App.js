@@ -5,7 +5,7 @@ import Inventory from "./pages/Inventory";
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
       <Inventory />
     </div>
   );
