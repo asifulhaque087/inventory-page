@@ -4,10 +4,21 @@ import UilGithub from "@iconscout/react-unicons/icons/uil-github";
 const Inventory = () => {
   return (
     <>
-      <div>Inventory page</div>
-      <div>
-        <UilGithub size="140" color="#61DAFB" />
-      </div>
+    <header>
+        this is header
+    </header>
+    <main>
+        <aside>
+            this is sidebar
+
+        </aside>
+
+        <article>
+            this is table part
+
+        </article>
+        
+    </main>
     </>
   );
 };
