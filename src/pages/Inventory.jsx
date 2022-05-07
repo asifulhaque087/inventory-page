@@ -54,7 +54,7 @@ const Inventory = () => {
         </div>
       </header>
       <main className="min-h-screen flex">
-        <aside className="shrink-0 w-auto md:w-60 box-border">
+        <aside className="shrink-0 w-auto hidden sm:block md:w-60 box-border">
           <nav className="px-3 flex flex-col gap-5 text-neutral-7 border-r h-full py-8">
             {/* home */}
             <div className="px-6 flex items-center gap-2">
@@ -90,12 +90,12 @@ const Inventory = () => {
           </nav>
         </aside>
 
-        <section>
+        <section className="w-full grow">
           <h2 className="px-9 font-bold capitalize text-neutral-9 text-xl py-4 border-b">
             inventory
           </h2>
 
-          <article className="grow bg-greenn-500 px-9">
+          <article className="w-full bg-greenn-500 px-9">
             <div className="relative overflow-x-auto border sm:rounded-lg bg-white mt-6">
               <div className="p-4">
                 <label htmlFor="table-search" className="sr-only">
