@@ -54,38 +54,38 @@ const Inventory = () => {
         </div>
       </header>
       <main className="min-h-screen flex">
-        <aside className="w-60 box-borderr pl-9">
-          <nav className="flex flex-col gap-5 text-neutral-7 border-r h-full py-8">
+        <aside className="shrink-0 w-auto md:w-60 box-border">
+          <nav className="px-3 flex flex-col gap-5 text-neutral-7 border-r h-full py-8">
             {/* home */}
-            <div className="flex items-center gap-2">
+            <div className="px-6 flex items-center gap-2">
               <span>
                 <img src="../../icons/home.png" alt="" />
               </span>
-              <span>Dashboard</span>
+              <span className="hidden md:inline">Dashboard</span>
             </div>
 
             {/* inventory */}
-            <div className="flex items-center gap-2 text-primary-color">
+            <div className="px-6 flex  justify-center md:justify-start items-center gap-2 text-primary-color bg-white shadow py-3 rounded ">
               <span>
                 <img src="../../icons/inventory.png" alt="" />
               </span>
-              <span>Inventory</span>
+              <span className="hidden md:inline">Inventory</span>
             </div>
 
             {/* documents */}
-            <div className="flex items-center gap-2">
+            <div className="px-6 flex items-center gap-2">
               <span>
-                <img src="../../icons/home.png" alt="" />
+                <img src="../../icons/document.png" alt="" />
               </span>
-              <span>Documents</span>
+              <span className="hidden md:inline">Documents</span>
             </div>
 
             {/* settings */}
-            <div className="flex items-center gap-2">
-              <span>
+            <div className="px-6 flex items-center gap-2">
+              <span className="">
                 <img src="../../icons/setting.png" alt="" />
               </span>
-              <span>Settings</span>
+              <span className="hidden md:inline">Settings</span>
             </div>
           </nav>
         </aside>
