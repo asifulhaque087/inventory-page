@@ -6,7 +6,7 @@ const Inventory = () => {
       <header className="bg-white px-9 py-3 flex items-center border-b">
         {/* left */}
         <div>
-          <button className="flex items-center">
+          <button className="flex items-center gap-2">
             <span>Starbucks</span>
             <span className="pt-1">
               <img src="../../icons/caret-down.png" alt="" />
@@ -44,7 +44,7 @@ const Inventory = () => {
               alt="avatar"
               className="h-10 w-10 rounded-full"
             />
-            <button className="flex items-center whitespace-nowrap">
+            <button className="flex items-center whitespace-nowrap gap-2">
               <span>John Doe</span>
               <span className="pt-1">
                 <img src="../../icons/caret-down.png" alt="" />
